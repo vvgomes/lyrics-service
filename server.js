@@ -15,8 +15,8 @@ var server = require('http').createServer(function(request, response) {
 	};
 
 	musicInfoService(url.query).get(function(result){
-		response.writeHead(200, { 'Content-Type': 'application/json' });
-		response.end(JSON.stringify(result));	
+		response.writeHead(200, { 'Content-Type': 'application/x-javascript' });
+		response.end('result('+JSON.stringify(result)+')');	
 	});
 
 }).listen(process.env.PORT || 3000);
