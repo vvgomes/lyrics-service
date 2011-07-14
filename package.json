@@ -7,7 +7,7 @@
     "url": "git://github.com/nettofarah/grooveshark-lyrics.git"
   },
   "engines": {
-    "node": "v0.5.0"
+    "node": "v0.4.9"
   },
   "dependencies": {
     "jsdom": "*"
