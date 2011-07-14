@@ -1,7 +1,7 @@
 {
   "author": "Netto <nettofarah@gmail.com>",
   "name": "grooveshark-lyrics",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
     "url": "git://github.com/nettofarah/grooveshark-lyrics.git"
@@ -12,5 +12,10 @@
   "dependencies": {
     "jsdom": "*"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "Lyrics Scrapping Service",
+  "main": "server.js"
 }
