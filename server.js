@@ -19,5 +19,4 @@ var server = require('http').createServer(function(request, response) {
 		response.end(JSON.stringify(result));	
 	});
 
-	
-}).listen(8080);
+}).listen(process.env.PORT || 3000);
