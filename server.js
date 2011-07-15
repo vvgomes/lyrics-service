@@ -2,7 +2,7 @@ var URL = require('url');
 var musicInfoService = require('./lib/music-info');
 
 var valid = function(query){
-	return query.artist && query.music;
+	return (query.artist && query.music) && (query.artist != '' && query.music != '');
 };
 
 var server = require('http').createServer(function(request, response) {
